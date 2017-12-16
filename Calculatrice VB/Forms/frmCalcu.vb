@@ -48,7 +48,8 @@
             Nombre = ""
             If (calculatrice.EffectuerCalcul(PremierNombre,DeuxiemeNombre,Operateur)) Then
                 Resultat = calculatrice.LireCalculComplet
-                historique.Operation(PremierNombre & " " & Operateur & " " & DeuxiemeNombre & " = " & Resultat & Environment.NewLine)
+                historique.Operation(PremierNombre & " " & Operateur & " " & DeuxiemeNombre & " = " & Resultat)
+                historyTextBox.AppendText(PremierNombre & " " & Operateur & " " & DeuxiemeNombre & " = " & Resultat & Environment.NewLine)
                 PremierNombre = ""
                 DeuxiemeNombre = ""
                 Operateur = ""
