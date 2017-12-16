@@ -72,13 +72,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calcu.vb">
+    <Compile Include="Class\FileSave.vb" />
+    <Compile Include="Forms\frmCalcu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Calcu.Designer.vb">
-      <DependentUpon>Calcu.vb</DependentUpon>
+    <Compile Include="Forms\frmCalcu.Designer.vb">
+      <DependentUpon>frmCalcu.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Class\Calculatrice.vb" />
+    <Compile Include="Class\Historique.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -96,8 +99,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Calcu.resx">
-      <DependentUpon>Calcu.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\frmCalcu.resx">
+      <DependentUpon>frmCalcu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
